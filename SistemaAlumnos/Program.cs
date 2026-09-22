@@ -41,6 +41,10 @@ foreach (var e in exportables)
     Console.WriteLine(e.ExportarLinea());
 }
 
+// etapa 9: si le agrego ExportarEncabezado() a la interfaz salen 3 errores CS0535,
+// uno por cada clase que la implementa (Alumno, Profesor y Materia), todos diciendo
+// que la clase no implementa ese miembro de interfaz
+
 var salir = false;
 
 while (!salir)
