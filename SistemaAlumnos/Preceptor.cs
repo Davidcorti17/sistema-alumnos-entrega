@@ -1,14 +1,17 @@
-public class Preceptor : Persona
+namespace SistemaAlumnos
 {
-    public string Turno { get; set; }
-
-    public Preceptor(string nombre, int documento, string turno) : base(nombre, documento)
+    public class Preceptor : Persona
     {
-        Turno = turno;
-    }
+        public string Turno { get; set; }
 
-    public override string Presentarse()
-    {
-        return "Hola, soy " + Nombre + ", preceptor del turno " + Turno + ".";
+        public Preceptor(string nombre, int documento, string turno) : base(nombre, documento)
+        {
+            Turno = turno;
+        }
+
+        public override string Presentarse()
+        {
+            return "Hola, soy " + Nombre + ", preceptor del turno " + Turno + ".";
+        }
     }
 }

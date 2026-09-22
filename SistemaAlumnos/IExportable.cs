@@ -1,5 +1,7 @@
-public interface IExportable
+namespace SistemaAlumnos
 {
-    // La interfaz solo declara la firma, sin cuerpo.
-    string ExportarLinea();
+    public interface IExportable
+    {
+        string ExportarLinea();
+    }
 }
