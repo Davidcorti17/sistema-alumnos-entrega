@@ -12,7 +12,6 @@ namespace SistemaAlumnos
             Legajo = legajo;
         }
 
-        // las notas van por aca, si no entran en 0..10 no toca nada
         public bool CargarNotas(double nota1, double nota2)
         {
             if (nota1 < 0 || nota1 > 10 || nota2 < 0 || nota2 > 10)
@@ -41,7 +40,6 @@ namespace SistemaAlumnos
             if (Nota2 < 10) Nota2++;
         }
 
-        // sin el override tira warning CS0114, dice que oculta el ToString de object
         public override string ToString()
         {
             return Legajo + " - " + Nombre + " (promedio: " + Promedio() + ")";

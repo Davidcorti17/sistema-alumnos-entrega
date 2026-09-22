@@ -1,6 +1,5 @@
 namespace SistemaAlumnos
 {
-    // esta no hereda de Persona pero igual entra en la lista de IExportable
     public class Materia : IExportable
     {
         public string Codigo { get; set; }
